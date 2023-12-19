@@ -359,6 +359,7 @@ img {
   letter-spacing: 0.32px;
   background-color: #4D5AE5;
   transform: translateY(100%);
+  transition-property: transform;
   transition-duration:250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
