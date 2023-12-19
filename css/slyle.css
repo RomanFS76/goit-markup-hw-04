@@ -87,6 +87,7 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .nav {
@@ -128,6 +129,10 @@ img {
   position: relative;
 }
 
+.curent {
+  color: #404BBF;
+}
+
 .nav-link.active::after {
   content: '';
   display: block;
@@ -136,7 +141,7 @@ img {
   background-color: #404bbf;
   border-radius: 2px;
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
 }
 
 .nav-link:hover,
@@ -173,14 +178,16 @@ img {
 
 .service {
   padding: 188px 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1440px;
+  max-width: 1440px;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .service-button {
@@ -239,10 +246,7 @@ img {
   background-color: #f4f4fd;
 }
 
-.advantages-icon {
-  width: 64px;
-  height: 64px;
-}
+
 
 /* OUR TEAM------------------------------------------------------------- */
 .ourteam {
@@ -355,7 +359,6 @@ img {
   letter-spacing: 0.32px;
   background-color: #4D5AE5;
   transform: translateY(100%);
-  transition-property: transform, box-shadow;
   transition-duration:250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -375,24 +378,18 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
 }
+.footer .container {
+align-items: baseline;
+}
+
+
+
 
 .footer-logo-wrapper {
-  display: inline-block;
+
   margin-right: 120px;
 }
 
-.footer-social-wrapper {
-  display: inline-block;
-  vertical-align: top;
-  color: white;
-}
-
-.footer-social-wrapper p {
-  margin-bottom: 16px;
-  font-weight: 500;
-  line-height: 1.5; /* 150% */
-  letter-spacing: 0.32px;
-}
 
 .logo-light {
   color: #f4f4fd;
@@ -406,6 +403,15 @@ img {
 .footer .text {
   width: 264px;
   color: #f4f4fd;
+}
+
+
+.footer-social-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+  color: white;
 }
 
 .footer-social-list {
